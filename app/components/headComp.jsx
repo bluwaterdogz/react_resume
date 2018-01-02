@@ -6,7 +6,7 @@ class Header extends React.Component{
     var vidSrc = require('../../build/assets/video/forst-trim.mp4');
     return (
         <div id = "divider1" className=" divider">
-          <video src={vidSrc} autoPlay loop muted/>
+          <video src={`./${vidSrc}`} autoPlay loop muted/>
           <div className="overlay flexbox-container">
             <div id="title-cont" >
               <div id="title-box" >
@@ -17,7 +17,7 @@ class Header extends React.Component{
                 <Link to="projects" className="btn-white">Professional</Link>
                 <Link to="/" className="btn-white">About me</Link>
                 <a href="https://github.com/bluwaterdogz/react_resume" className="btn-white">Github</a>
-                <a href="http://bluwaterdogz.github.io/web_des_resume/" className="btn-white">Angular Mirror</a>
+                <a href="http://bluwaterdogz.github.io/web_des_resume/" className="btn-white">Angular Version</a>
               </div>
             </div>
           </div>

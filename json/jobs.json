@@ -3,18 +3,18 @@
     "companyName":"Launch Brigade",
     "companyUrl":"www.launchbrigade.com",
     "professionalTitle":"Front-end Developer",
-    "logoImg":"assets/imgs/logolb.png"
+    "logoImg":"./build/assets/imgs/logolb.png"
   },
   {
     "companyName":"Sleepless Media",
     "companyUrl":"www.sleeplessmedia.com",
     "professionalTitle":"Front-end Developer Intern",
-    "logoImg":"assets/imgs/logosleepless.png"
+    "logoImg":"./build/assets/imgs/logosleepless.png"
   },
   {
     "companyName":"Once In Motion",
     "companyUrl":"https://onceinmotion.wordpress.com/",
     "professionalTitle":"Designer Intern",
-    "logoImg":"assets/imgs/logooimba1.png"
+    "logoImg":"./build/assets/imgs/logooimba1.png"
   }
 ]

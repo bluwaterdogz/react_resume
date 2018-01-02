@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import SubheaderBackground from '../../build/assets/imgsOpt/test.jpeg'
 
 class ProjectList extends React.Component {
   constructor(props){super(props);}
@@ -50,8 +51,13 @@ class ImageContainer extends React.Component {
   constructor(props){super(props);}
 
   render() {
+    let gitHubLink = (projectUrl) => {
+      return projectUrl ? <a href={ projectUrl } target="_blank">&nbsp;<i className="fa fa-github"></i></a> : '';
+    }
+
     var imgStyle = {
-      backgroundImage: "url(" + this.props.proj.img + ")"
+      backgroundPosition: 'center',
+      backgroundImage: `url(${this.props.proj.img})`
     }
     return (
       <div className="col-xs-12 col-sm-6 image-container">
@@ -60,10 +66,10 @@ class ImageContainer extends React.Component {
           <div className="overlay">
             <div className="title-cont">
                <h3 >
-                <a className="project-title" href={ this.props.proj.url ? this.props.proj.url : '' } target="_blank">{this.props.proj.title}</a>
-                <a  href={ this.props.proj.projectUrl ? this.props.proj.projectUrl  : ''} target="_blank">
-                  &nbsp;<i className="fa fa-github"></i>
-                </a>
+                <a className="project-title" href={ `${this.props.proj.url ? this.props.proj.url : ''}` } target="_blank">{this.props.proj.title}</a>
+
+                {gitHubLink(this.props.proj.projectUrl)}
+
               </h3>
               <hr/>
             </div>
@@ -115,10 +121,14 @@ class Projects extends React.Component {
       })
   }
 
+
   render() {
+    let backgroundImgStyle = {
+      backgroundImage : `url(${SubheaderBackground})`
+    }
     return(
     <section id="projects" className="content">
-      <div className="intro">
+      <div className="intro" style={backgroundImgStyle}>
         <div className="overlay">
             <h2>Projects</h2>
             <hr width="80%"/>

@@ -2,13 +2,13 @@ import React from "react"
 
 class Footer extends React.Component{
   render(){
-    var profPic = require('../../build/assets/imgsopt/me.jpg');
+    var profPic = require('../../build/assets/imgsOpt/me.jpg');
     return (
       <footer className="content">
          <div className="divider divider6">
           <div className="overlay">
               <div className="profcont bounceIn animated ">
-                <img src={profPic} alt="Hey this is a picture of me!" id="profPic"/>
+                <img src={`./${profPic}`} alt="Hey this is a picture of me!" id="profPic"/>
               </div>
           </div>
         </div>
