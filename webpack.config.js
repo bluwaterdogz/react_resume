@@ -2,7 +2,7 @@ var hwp = require('html-webpack-plugin');
 var webpack = require('webpack');
 // var PROD = JSON.parse(process.env.PROD || '0');
 var hwp_config = new hwp({
-  template:  __dirname + '/app/index.html',
+  template:  __dirname + '/index.html',
   filename: 'index.html',
   inject: 'body'
 });
