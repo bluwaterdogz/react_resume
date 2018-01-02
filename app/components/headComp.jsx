@@ -4,7 +4,7 @@ class Header extends React.Component{
   render(){
     return (
         <div id = "divider1" className=" divider">
-          <video src={`./${require_relative('./build/assets/video/forest-trim.mp4')}`} autoPlay loop muted/>
+          <video src="./build/assets/video/forest-trim.mp4" autoPlay loop muted/>
           <div className="overlay flexbox-container">
             <div id="title-cont" >
               <div id="title-box" >
