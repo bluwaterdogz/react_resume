@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <title>My App</title>
   <meta name="description" content="Brian Velasquez' Resume in React">
-
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <!-- <link rel="stylesheet" href="styles.css"> -->
   	<meta charset="UTF-8">
   	<title>Brian Velasquez's Web Development Portfolio/Resume</title>
