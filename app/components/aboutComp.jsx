@@ -2,11 +2,8 @@ import React from "react"
 
 class About extends React.Component{
   render(){
-    var mobileImg = require("../../build/assets/imgsopt/mob-trans-res.png");
-    var imgStyle = {
-      backgroundImage: "url(" + this.props.proj.img + ")"
-    }
-
+    let mobileImg = require("../../build/assets/imgsopt/mob-trans-res.png");
+    let bgImg = {backgroundImage:"url(./build/assets/imgsOpt/comp.jpg)"}
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
@@ -33,7 +30,7 @@ class About extends React.Component{
           </div>
         </div>
         <div className="divider divider2">
-          <div className="overlay" style="background-image:url(./build/assets/imgsOpt/comp.jpg);" ></div>
+          <div className="overlay" style={bgImg} ></div>
         </div>
         <div className="block second-block">
           <div className="overlay">

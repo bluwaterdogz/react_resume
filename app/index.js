@@ -1,5 +1,5 @@
 import React from "react"
 import {render} from "react-dom"
-import Routes from "./config/routes.jsx"
+import Layout from "./components/layoutComp.jsx"
 
-render(<Routes/>, document.getElementById('app'))
+render(<Layout/>, document.getElementById('app'))

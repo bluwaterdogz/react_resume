@@ -2,6 +2,48 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import SubheaderBackground from '../../build/assets/imgsOpt/test.jpeg'
 
+class Projects extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      loading: true,
+      data:[]
+    }
+  }
+
+  componentDidMount(){
+    return fetch('json/projects.json')
+      .then((res)=> res.json())
+      .then((JSONRes)=>{
+        this.setState({
+          data: JSONRes
+        });
+      })
+  }
+
+
+  render() {
+    let backgroundImgStyle = {
+      backgroundImage : `url(${SubheaderBackground})`
+    }
+    return(
+    <section id="projects" className="content">
+      <div className="intro" style={backgroundImgStyle}>
+        <div className="overlay">
+            <h2>Projects</h2>
+            <hr width="80%"/>
+            <p className="topic-text">I've participated in the development and launch of a number of applications and websites both as the sole developer and within a team. Some of these projects are listed below:</p>
+        </div>
+      </div>
+      <div className='container'>
+        <div  className = "project-desc">
+          <ProjectList data = {this.state.data} loading = {this.state.loading}/>
+        </div>
+      </div>
+    </section>
+  )}
+}
+
 class ProjectList extends React.Component {
   constructor(props){super(props);}
   render() {
@@ -102,46 +144,5 @@ class DescriptionContainer extends React.Component {
   }
 }
 
-class Projects extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      loading: true,
-      data:[]
-    }
-  }
-
-  componentDidMount(){
-    return fetch('json/projects.json')
-      .then((res)=> res.json())
-      .then((JSONRes)=>{
-        this.setState({
-          data: JSONRes
-        });
-      })
-  }
-
-
-  render() {
-    let backgroundImgStyle = {
-      backgroundImage : `url(${SubheaderBackground})`
-    }
-    return(
-    <section id="projects" className="content">
-      <div className="intro" style={backgroundImgStyle}>
-        <div className="overlay">
-            <h2>Projects</h2>
-            <hr width="80%"/>
-            <p className="topic-text">I've participated in the development and launch of a number of applications and websites both as the sole developer and within a team. Some of these projects are listed below:</p>
-        </div>
-      </div>
-      <div className='container'>
-        <div  className = "project-desc">
-          <ProjectList data = {this.state.data} loading = {this.state.loading}/>
-        </div>
-      </div>
-    </section>
-  )}
-}
 
 export default Projects;
