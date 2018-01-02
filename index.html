@@ -4,15 +4,6 @@
   <meta charset="UTF-8">
   <title>My App</title>
   <meta name="description" content="Brian Velasquez' Resume in React">
-  <script>
-    (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
   <!-- <link rel="stylesheet" href="styles.css"> -->
   	<meta charset="UTF-8">
   	<title>Brian Velasquez's Web Development Portfolio/Resume</title>
@@ -31,13 +22,13 @@
   	);
   	</script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/build/assets/styles/css/app.css" media="screen" title="no title" charset="utf-8">
-  <link rel='shortcut icon' href='/build/assets/imgsopt/boozeico.png' type='image/x-icon' />
+  <link rel="stylesheet" href="./build/assets/styles/css/app.css" media="screen" title="no title" charset="utf-8">
+  <link rel='shortcut icon' href='./build/assets/imgsopt/boozeico.png' type='image/x-icon' />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 
 </head>
 <body>
   <div id="app"></div>
-  <script src="/build/bundle.js"></script>
+  <script src="./build/bundle.js"></script>
 </body>
 </html>
