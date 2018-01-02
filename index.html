@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>My App</title>
   <meta name="description" content="Brian Velasquez' Resume in React">
+  <!-- approach from http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <!-- <link rel="stylesheet" href="styles.css"> -->
   	<meta charset="UTF-8">
   	<title>Brian Velasquez's Web Development Portfolio/Resume</title>
