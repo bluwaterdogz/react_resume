@@ -2,7 +2,7 @@ import React from "react"
 
 class Footer extends React.Component{
   render(){
-    var profPic = require('../../docs/assets/imgsopt/me.jpg');
+    var profPic = require('../../build/assets/imgsopt/me.jpg');
     return (
       <footer className="content">
          <div className="divider divider6">

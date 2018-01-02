@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "My React Resume\"",
   "main": "webpack.config.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "build": "webpack -p --config webpack.config.js",
     "start": "webpack-dev-server"

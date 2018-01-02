@@ -2,7 +2,7 @@ import React from "react"
 
 class About extends React.Component{
   render(){
-    var mobileImg = require("../../docs/assets/imgsopt/mob-trans-res.png");
+    var mobileImg = require("../../build/assets/imgsopt/mob-trans-res.png");
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">

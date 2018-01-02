@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 class Header extends React.Component{
   render(){
-    var vidSrc = require('../../docs/assets/video/forst-trim.mp4');
+    var vidSrc = require('../../build/assets/video/forst-trim.mp4');
     return (
         <div id = "divider1" className=" divider">
           <video src={vidSrc} autoPlay loop muted/>
@@ -24,5 +24,4 @@ class Header extends React.Component{
         </div>
     )}
 }
-
 export default Header;
