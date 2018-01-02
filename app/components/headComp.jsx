@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from 'react-router'
-
+import vidSrc from '../../build/assets/video/forest-trim.mp4'
 class Header extends React.Component{
   render(){
-    var vidSrc = require('../../build/assets/video/forst-trim.mp4');
     return (
         <div id = "divider1" className=" divider">
           <video src={`./${vidSrc}`} autoPlay loop muted/>
