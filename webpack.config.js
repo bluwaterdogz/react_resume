@@ -12,7 +12,7 @@ module.exports = {
     './app/index.js'
   ],
   output:{
-    filename:"index_bundle.js",
+    filename:"bundle.js",
     path: __dirname + '/docs'
   },
   module: {

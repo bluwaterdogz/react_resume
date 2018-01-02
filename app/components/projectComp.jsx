@@ -19,7 +19,7 @@ class ProjectList extends React.Component {
         </div>
       )
     }else{
-      return <p>"Tee Hee"</p>
+      return <p>"Missing"</p>
     }
   }
 }
@@ -47,9 +47,7 @@ class ProjectList extends React.Component {
 }
 
 class ImageContainer extends React.Component {
-  constructor(props){
-    super(props);
-  }
+  constructor(props){super(props);}
 
   render() {
     var imgStyle = {
@@ -62,8 +60,9 @@ class ImageContainer extends React.Component {
           <div className="overlay">
             <div className="title-cont">
                <h3 >
-                <a className="project-title" href="{this.props.proj.url}" target="_blank">{this.props.proj.title}</a>
-                <a  href="{this.props.proj.projectUrl}" target="_blank">
+                 
+                <a className="project-title" href={ this.props.proj.url ? this.props.proj.url : '' } target="_blank">{this.props.proj.title}</a>
+                <a  href={ this.props.proj.projectUrl ? this.props.proj.projectUrl  : ''} target="_blank">
                   &nbsp;<i className="fa fa-github"></i>
                 </a>
               </h3>
