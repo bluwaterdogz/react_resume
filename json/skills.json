@@ -71,7 +71,7 @@
         "classes":"none"
       },
       {
-        "skill":"Java",
+        "skill":"SQL",
         "likes":0,
         "classes":"none"
       },
@@ -102,7 +102,7 @@
         "classes":"none"
       },
       {
-        "skill":"Web2Py",
+        "skill":"React",
         "likes":0,
         "classes":"none"
       },
@@ -112,12 +112,12 @@
         "classes":"none"
       },
       {
-        "skill":"Git",
+        "skill":"Symfony",
         "likes":0,
         "classes":"none"
       },
       {
-        "skill":"Gulp",
+        "skill":"Flask",
         "likes":0,
         "classes":"none"
       }

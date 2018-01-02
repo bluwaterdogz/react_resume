@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from 'react-router'
-import vidSrc from '../../build/assets/video/forest-trim.mp4'
 class Header extends React.Component{
   render(){
     return (
         <div id = "divider1" className=" divider">
-          <video src={`./${vidSrc}`} autoPlay loop muted/>
+          <video src={`./${require_relative('../../build/assets/video/forest-trim.mp4')}`} autoPlay loop muted/>
           <div className="overlay flexbox-container">
             <div id="title-cont" >
               <div id="title-box" >
