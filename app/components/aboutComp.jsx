@@ -3,11 +3,7 @@ import React from "react"
 class About extends React.Component{
   render(){
     let mobileImg1 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let mobileImg2 = require("./build/assets/imgsopt/mob-trans-res.png");
 
-    let mobileImg3 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let mobileImg4 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let mobileImg5 = require("../../build/assets/imgsopt/mob-trans-res.png");
     let bgImg = {backgroundImage:"url(./build/assets/imgsOpt/comp.jpg)"}
     return (
       <section id="statement" className="content">
@@ -24,11 +20,11 @@ class About extends React.Component{
           <div className="container sec-container">
             <div className="img-cont col-sm-12 col-md-5">
               <img src={`${mobileImg1}`} alt="0"/>
-              <img src={`${mobileImg2}`} alt="1"/>
+              <img src={mobileImg1} alt="1"/>
+              <img src={`./${mobileImg1}`} alt="4"/>
               <img src="./build/assets/imgsopt/mob-trans-res.png" alt="2"/>
               <img src="../../build/assets/imgsopt/mob-trans-res.png" alt="3"/>
               <img src={`./${mobileImg1}`} alt="4"/>
-              <img src={`./${mobileImg2}`} alt="5"/>
             </div>
             <div className="text-cont col-sm-12 col-md-7">
               <h3>
