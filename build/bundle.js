@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/Users/ps/Desktop/Git/react_resume/build";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 24);
@@ -5822,7 +5822,6 @@ module.exports = __webpack_require__.p + "assets/required/me.jpg";
 class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     let mobileImg1 = __webpack_require__(75);
-
     let bgImg = { backgroundImage: "url(./build/assets/imgsOpt/comp.jpg)" };
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "section",
@@ -5839,7 +5838,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "p",
           { className: "firstInfo" },
-          "A junior front end developer dedicated to implementing stunning, engaging and user-friendly designs, he's experienced in Javascript, Python, HTML/CSS, PHP and Java. ",
+          "A junior front end developer dedicated to implementing stunning, engaging and user-friendly designs with professional experienced in Javascript, Python, HTML/CSS, PHP, ReactJs and AngularJS. ",
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null),
           " This portfolio which is hosted on Github pages demonstrates my abilities and was built using a git and Webpack backend dev environment and coded in Atom in a combination of React, Sass and Bootstrap."

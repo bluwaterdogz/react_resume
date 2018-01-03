@@ -3,14 +3,13 @@ import React from "react"
 class About extends React.Component{
   render(){
     let mobileImg1 = require("../../build/assets/imgsopt/mob-trans-res.png");
-
     let bgImg = {backgroundImage:"url(./build/assets/imgsOpt/comp.jpg)"}
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
           <h2>My Web Design Experience</h2>
           <hr width="80%"/>
-          <p className="firstInfo">A junior front end developer dedicated to implementing stunning, engaging and user-friendly designs, he's experienced in Javascript, Python, HTML/CSS, PHP and Java. <br/>
+          <p className="firstInfo">A junior front end developer dedicated to implementing stunning, engaging and user-friendly designs with professional experienced in Javascript, Python, HTML/CSS, PHP, ReactJs and AngularJS. <br/>
           <br/> This portfolio which is hosted on Github pages demonstrates my abilities and was built using a git and Webpack backend dev environment and coded in Atom in a combination of React, Sass and Bootstrap.</p>
         </div>
         <div className="divider divider2">

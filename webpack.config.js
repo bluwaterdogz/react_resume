@@ -1,7 +1,7 @@
-var hwp = require('html-webpack-plugin');
-var webpack = require('webpack');
-// var PROD = JSON.parse(process.env.PROD || '0');
-var hwp_config = new hwp({
+const hwp = require('html-webpack-plugin');
+const webpack = require('webpack');
+const PROD = JSON.parse(process.env.PROD || '0');
+const hwp_config = new hwp({
   template:  __dirname + '/index.html',
   filename: 'index.html',
   inject: 'body'
@@ -14,7 +14,7 @@ module.exports = {
   output:{
     filename:"bundle.js",
     path: __dirname + '/build',
-    publicPath: ''
+    publicPath:  __dirname + '/build'
   },
   module: {
     loaders: [
