@@ -13,7 +13,8 @@ module.exports = {
   ],
   output:{
     filename:"bundle.js",
-    path: __dirname + '/build'
+    path: __dirname + '/build',
+    publicPath: ''
   },
   module: {
     loaders: [
@@ -26,7 +27,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif|mp4)$/,
         loader: 'url-loader',
         options: {
-          limit: 8192
+          limit: 8192,
+          name:"assets/required/[name].[ext]"
         }
       }
     ]

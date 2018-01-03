@@ -5740,7 +5740,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "73927770395ca0c177aa63e0e123d09d.mp4";
+module.exports = __webpack_require__.p + "assets/required/forest-trim.mp4";
 
 /***/ }),
 /* 72 */
@@ -5808,7 +5808,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e1d82e4de4c76efa06bbf6c462b4f80a.jpg";
+module.exports = __webpack_require__.p + "assets/required/me.jpg";
 
 /***/ }),
 /* 74 */
@@ -5933,7 +5933,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 /* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c72284f1a138e3fa5bbf5c385b28561b.png";
+module.exports = __webpack_require__.p + "assets/required/mob-trans-res.png";
 
 /***/ }),
 /* 76 */
@@ -6429,7 +6429,7 @@ class DescriptionContainer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a
 /* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "097f5a5d59b6f4bb7cb9ab39ecc41536.jpeg";
+module.exports = __webpack_require__.p + "assets/required/test.jpeg";
 
 /***/ })
 /******/ ]);
