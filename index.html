@@ -7,6 +7,17 @@
   <!-- <link rel="stylesheet" href="styles.css"> -->
   	<meta charset="UTF-8">
   	<title>Brian Velasquez's Web Development Portfolio/Resume</title>
+
+    <!-- approach from http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
@@ -21,6 +32,7 @@
     	    '<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"/><link rel="stylesheet" src="bower_components/bootstrap/dist/css/bootstrap.min.css"></link>'
     	);
   	</script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./build/assets/styles/css/app.css" media="screen" title="no title" charset="utf-8">
   <link rel='shortcut icon' href='./build/assets/imgsopt/boozeico.png' type='image/x-icon' />
