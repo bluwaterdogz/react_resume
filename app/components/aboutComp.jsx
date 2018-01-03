@@ -7,7 +7,7 @@ class About extends React.Component{
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
-          <h2>My Web Design Experience</h2>
+          <h2>Purpose</h2>
           <hr width="80%"/>
           <p className="firstInfo">A junior front end developer dedicated to implementing stunning, engaging and user-friendly designs with professional experienced in Javascript, Python, HTML/CSS, PHP, ReactJs and AngularJS. <br/>
           <br/> This portfolio which is hosted on Github pages demonstrates my abilities and was built using a git and Webpack backend dev environment and coded in Atom in a combination of React, Sass and Bootstrap.</p>
@@ -26,9 +26,7 @@ class About extends React.Component{
               <img src={`./${mobileImg1}`} alt="4"/>
             </div>
             <div className="text-cont col-sm-12 col-md-7">
-              <h3>
-              Mobile Friendly, Cross Browser compatible
-              </h3>
+              <h3>Skills</h3>
                 <hr width="80%"/>
                 <p>This year, online mobile traffic is expected to overtake desktop traffic. Is your website ready?<br/><br/>Responsive cross browser Web Design is my jam! Flex-Box? Into it. Media Queries? In the bag! Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your site shine in a mobile friendly, multi-browser world.</p>
             </div>
@@ -47,7 +45,7 @@ class About extends React.Component{
                   API Savy
                   </h3>
                   <hr width="80%"/>
-                  <p>I'm quickly adaptable to a variety of API's. Utilizing Javascript to asynchronously reach anything from Google maps to customized API endpoints, I'm excited to connect your clients to the data they seek.</p>
+                  <p>Quickly adaptable to a variety of API's. Utilizing Javascript to asynchronously reach anything from Google maps to customized API endpoints, I'm excited to connect your clients to the data they seek.</p>
                 </div>
               </div>
             </div>
