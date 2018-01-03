@@ -31,7 +31,7 @@ class About extends React.Component{
               Mobile Friendly, Cross Browser compatible
               </h3>
                 <hr width="80%"/>
-                <p>This year, online mobile traffic is expected to overtake desktop traffic. Is your website ready?<br/><br/>Responsive cross browser Web Design is my Jam. Flex-Box? Into it. Media Queries? In the Bag. Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your site shine in a mobile friendly, multi-browser world.</p>
+                <p>This year, online mobile traffic is expected to overtake desktop traffic. Is your website ready?<br/><br/>Responsive cross browser Web Design is my jam! Flex-Box? Into it. Media Queries? In the bag! Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your site shine in a mobile friendly, multi-browser world.</p>
             </div>
           </div>
         </div>

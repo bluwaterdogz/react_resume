@@ -5,7 +5,6 @@ import about from "./aboutComp.jsx"
 import skills from "./skillsComp.jsx"
 import projects from "./projectComp.jsx"
 import {BrowserRouter, Route} from 'react-router-dom'
-// import { RouteTransition } from 'react-router-transition';
 
 export default () => (
     <BrowserRouter >
