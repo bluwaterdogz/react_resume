@@ -14,7 +14,7 @@ module.exports = {
   output:{
     filename:"bundle.js",
     path: __dirname + '/build',
-    publicPath: './build'
+    publicPath: PROD ? 'react_resume/build'  : "./build";
   },
   module: {
     loaders: [
