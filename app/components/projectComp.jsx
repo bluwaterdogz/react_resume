@@ -12,7 +12,7 @@ class Projects extends React.Component {
   }
 
   componentDidMount(){
-    return fetch('./json/projects.json')
+    return fetch('build/assets/json/projects.json')
       .then((res)=> res.json())
       .then((JSONRes)=>{
         this.setState({

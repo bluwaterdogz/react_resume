@@ -171,21 +171,21 @@ class Skills extends React.Component {
   }
 
   componentDidMount(){
-    fetch('./json/skills.json')
+    fetch('build/assets/json/skills.json')
     .then((res) => res.json())
     .then((JSONRes) => {
       this.setState({
         skillsData : JSONRes
       });
     });
-    fetch('./json/classes.json')
+    fetch('build/assets/json/classes.json')
     .then((res) => res.json())
     .then((JSONRes) => {
       this.setState({
         eduData : JSONRes
       });
     });
-    fetch('./json/jobs.json')
+    fetch('build/assets/json/jobs.json')
     .then((res) => res.json())
     .then((JSONRes) => {
       this.setState({

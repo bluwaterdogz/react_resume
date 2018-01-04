@@ -3,7 +3,7 @@ import React from "react"
 class About extends React.Component{
   render(){
     let mobileImg1 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let bgImg = {backgroundImage:"url(./build/assets/imgsOpt/comp.jpg)"}
+    let bgImg = {backgroundImage:"url(./build/assets/imgsopt/comp.jpg)"}
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
