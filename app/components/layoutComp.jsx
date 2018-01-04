@@ -7,11 +7,13 @@ import projects from "./projectComp.jsx"
 import {BrowserRouter, Route} from 'react-router-dom'
 
 export default () => (
+    <BrowserRouter >
       <div>
         <Head></Head>
         <Route exact path= "/" component = {about}/>
-        <Route exact path = "/projects" component = {projects}/>
-        <Route exact path = "/skills" component = {skills}/>
+        <Route path = "/projects" component = {projects}/>
+        <Route path = "/skills" component = {skills}/>
         <Footer></Footer>
       </div>
+    </BrowserRouter>
 )
