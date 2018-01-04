@@ -18,12 +18,7 @@ class About extends React.Component{
         <div className="block first-block">
           <div className="container sec-container">
             <div className="img-cont col-sm-12 col-md-5">
-              <img src={`${mobileImg1}`} alt="0"/>
-              <img src={mobileImg1} alt="1"/>
-              <img src={`./${mobileImg1}`} alt="4"/>
-              <img src="./build/assets/imgsopt/mob-trans-res.png" alt="2"/>
-              <img src="../../build/assets/imgsopt/mob-trans-res.png" alt="3"/>
-              <img src={`./${mobileImg1}`} alt="4"/>
+              <img src={`${mobileImg1}`} alt="Mobile Design Example"/>
             </div>
             <div className="text-cont col-sm-12 col-md-7">
               <h3>Skills</h3>
