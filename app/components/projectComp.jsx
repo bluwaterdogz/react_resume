@@ -21,7 +21,6 @@ class Projects extends React.Component {
       })
   }
 
-
   render() {
     let backgroundImgStyle = {
       backgroundImage : `url(${SubheaderBackground})`

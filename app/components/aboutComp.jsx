@@ -3,7 +3,7 @@ import React from "react"
 class About extends React.Component{
   render(){
     let mobileImg1 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let bgImg = {backgroundImage:"url(./build/assets/imgsopt/comp.jpg)"}
+    let mobileImg2 = require("../../build/assets/imgsopt/comp.jpg");
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
@@ -17,31 +17,35 @@ class About extends React.Component{
         </div>
         <div className="block first-block">
           <div className="container sec-container">
-            <div className="img-cont col-sm-12 col-md-5">
-              <img src={`${mobileImg1}`} alt="Mobile Design Example"/>
-            </div>
-            <div className="text-cont col-sm-12 col-md-7">
-              <h3>Skills</h3>
-                <hr width="80%"/>
-                <p>This year, online mobile traffic is expected to overtake desktop traffic. Is your website ready?<br/><br/>Responsive cross browser Web Design is my jam! Flex-Box? Into it. Media Queries? In the bag! Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your site shine in a mobile friendly, multi-browser world.</p>
+            <div className="row">
+              <div className="img-cont col-sm-12 col-md-5">
+                <img src={`${mobileImg1}`} alt="Mobile Design Example"/>
+              </div>
+              <div className="text-cont col-sm-12 col-md-7">
+                <div>
+                  <h3>Skills</h3>
+                  <hr width="80%"/>
+                  <p>Responsive cross browser Web Design is my jam! Flex-Box? Into it. Media Queries? In the bag! Whether leveraging Bootstrap, Foundation, SASS or vanilla CSS, I'll make your app or site shine in a mobile friendly, multi-browser world.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div className="divider divider2">
-          <div className="overlay" style={bgImg} ></div>
+          <div className="overlay" ></div>
         </div>
         <div className="block second-block">
-          <div className="overlay">
+          <div className="overlay" >
             <div className="sec-container container">
               <div className="row">
-                <div className="img-cont col-md-6 col-md-push-6 "></div>
-                <div className="text-cont  col-md-6 col-md-pull-6">
-                  <h3>
-                  API Savy
-                  </h3>
-                  <hr width="80%"/>
-                  <p>Quickly adaptable to a variety of API's. Utilizing Javascript to asynchronously reach anything from Google maps to customized API endpoints, I'm excited to connect your clients to the data they seek.</p>
+                <div className="text-cont col-md-6 col-md-push-6">
+                  <div>
+                    <h3>API Savy</h3>
+                    <hr width="80%"/>
+                    <p >Quickly adaptable to a variety of API's. Utilizing Javascript to asynchronously reach anything from Google maps to customized API endpoints, I'm excited to connect your clients to the data they seek.</p>
+                  </div>
                 </div>
+                <div  className="img-cont col-md-6 col-md-push-6 " ></div>
               </div>
             </div>
           </div>

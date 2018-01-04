@@ -24,7 +24,7 @@ class Footer extends React.Component{
             <a href="" className="backToTop btn btn-primary">Back to Top</a>
           </div>
           <noscript>Turn on JavaScript to see my email address ;P</noscript>
-          <p className="disclaimer">All pictures have Creative Commons license or taken by the designer unless otherwise noted.</p>
+          <p >Site made using Reactjs, using fetch calls to local json files to simulate API calls. Hosted using Github pages.</p>
         </div>
       </footer>
     )

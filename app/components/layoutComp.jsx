@@ -4,16 +4,19 @@ import Footer from "./footerComp.jsx"
 import about from "./aboutComp.jsx"
 import skills from "./skillsComp.jsx"
 import projects from "./projectComp.jsx"
-import {BrowserRouter, Route} from 'react-router-dom'
-
+import {HashRouter, Route, Switch} from 'react-router-dom'
+import lostComp from './404Comp.jsx'
 export default () => (
-    <BrowserRouter >
+    <HashRouter >
       <div>
         <Head></Head>
-        <Route exact path= "/" component = {about}/>
-        <Route path = "/projects" component = {projects}/>
-        <Route path = "/skills" component = {skills}/>
+        <Switch>
+          <Route exact path= "/" component = {about}/>
+          <Route path = "/projects" component = {projects}/>
+          <Route path = "/skills" component = {skills}/>
+          <Route component = {lostComp}/>
+        </Switch>
         <Footer></Footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
 )

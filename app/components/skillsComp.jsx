@@ -68,12 +68,16 @@ class EducationList extends React.Component{
     }
     return(
       <section id="education" className="content fluid-container">
-    		<h2>On Campus Classes</h2>
-    		<h3>Click for more info</h3>
+    		<h2>Classes</h2>
+    		<h4>Santa Clara University, UCSC and Cabrillo College</h4>
     		<hr width="80%"/>
+        <div className="container">
+          <div className="row">
           {EduCols}
+          </div>
+        </div>
     		<div className="col-md-12 clear disclaimer">
-    			<p>Other relevant classes include: Introduction to C++ programming & Introduction to Java Programming using games and simulations</p>
+    			<p>Other relevant classes include: Java and C++ Intermediate and Introduction classes</p>
     		</div>
     	</section>
     )
@@ -81,6 +85,7 @@ class EducationList extends React.Component{
 }
 
 class EduListCol extends React.Component{
+  // separates into columns for vertical alignment
   render(){
     return (
       <div className="col-sm-4 educationcontainer">
@@ -133,22 +138,23 @@ class JobList extends React.Component{
               <div id="work-cont">
             <h2>Professional Experience</h2>
             <hr width="80%"/>
+            <div className="container">
+              <div className="row">
               {
                 this.props.jobsData.map(function(job,i){
                   return (
                     <div className="workexperience sway col-sm-4" key = {job.companyName+i}>
+                      <a href="{job.companyUrl}">
                       <img src={job.logoImg} alt="logo for {job.companyName}"/>
-                      <a className="company-name" href="{job.companyUrl}">
-                          {job.companyName}
-                        </a>
-                      <br/>
-                      <a className="professional-title" href="{job.companyUrl}">
-                        {job.professionalTitle}
+                      <p className="company-name">{job.companyName}</p>
+                      <p className="professional-title" >{job.professionalTitle}</p>
                       </a>
                     </div>
                   );
                 })
               }
+              </div>
+              </div>
             <div className="clear">
               <p>Previous unlisted work experience in Molecular Biology, refrences availiable upon request.</p>
             </div>
@@ -198,14 +204,15 @@ class Skills extends React.Component {
     return (
       <div>
         <TypesList skillsData = {this.state.skillsData}/>
-        <div className="divider divider4">
-          <div className="overlay"></div>
-        </div>
-        <EducationList eduData = {this.state.eduData}/>
         <div className="divider divider5">
           <div className="overlay"></div>
         </div>
         <JobList jobsData = {this.state.jobsData}/>
+        <div className="divider divider4">
+          <div className="overlay"></div>
+        </div>
+        <EducationList eduData = {this.state.eduData}/>
+
       </div>
     )
   }

@@ -41,15 +41,6 @@
     "icon":"code"
   },
   {
-    "id":6,
-    "title":"Java programming 1, 2",
-    "location":"Cabrillo",
-    "date":"Fall 2015",
-    "description":"Introduction to OOP Java, followed by an intermediate Java class covering common data structures and java concepts.",
-    "icon":"code"
-  },
-
-  {
     "id":7,
     "title":"Android Programming",
     "location":"UCSC",
