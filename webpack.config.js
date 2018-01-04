@@ -16,6 +16,9 @@ module.exports = {
     path: __dirname + '/build',
     publicPath: '/build'
   },
+  devServer: {
+    contentBase: __dirname,
+  },
   module: {
     loaders: [
       {

@@ -4,7 +4,7 @@
   "description": "My React Resume",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack -p --config webpack.config.js",
+    "buildp": "webpack -p --config webpack.config.js",
     "start": "webpack-dev-server"
   },
   "author": "",
