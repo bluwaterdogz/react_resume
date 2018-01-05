@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SubheaderBackground from '../../build/assets/imgsOpt/test.jpeg'
+import SubheaderBackground from '../../imgs/test.jpeg'
 
 class Projects extends React.Component {
   constructor(props){
@@ -120,6 +120,7 @@ class ImageContainer extends React.Component {
     )
   }
 }
+
 
 class DescriptionContainer extends React.Component {
   constructor(props){super(props);}

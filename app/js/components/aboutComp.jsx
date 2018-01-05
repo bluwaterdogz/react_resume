@@ -2,8 +2,8 @@ import React from "react"
 
 class About extends React.Component{
   render(){
-    let mobileImg1 = require("../../build/assets/imgsopt/mob-trans-res.png");
-    let mobileImg2 = require("../../build/assets/imgsopt/comp.jpg");
+    let mobileImg1 = require("../../imgs/mob-trans-res.png");
+    let mobileImg2 = require("../../imgs/comp.jpg");
     return (
       <section id="statement" className="content">
         <div className="sec-container  statement-cont">
@@ -54,5 +54,4 @@ class About extends React.Component{
     )
   }
 }
-
 export default About;
