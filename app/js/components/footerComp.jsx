@@ -6,7 +6,7 @@ class Footer extends React.Component{
     return (
       <footer className="content">
          <div className="divider divider6">
-          <div className="overlay">
+          <div className="overlay flexbox-container">
               <div className="profcont bounceIn animated ">
                 <img src={`./${profPic}`} alt="Hey this is a picture of me!" id="profPic"/>
               </div>

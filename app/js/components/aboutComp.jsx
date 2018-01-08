@@ -31,7 +31,7 @@ class About extends React.Component{
             </div>
           </div>
         </div>
-        <div className="divider divider2">
+        <div className="divider divider3">
           <div className="overlay" ></div>
         </div>
         <div className="block second-block">
